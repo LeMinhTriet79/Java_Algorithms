@@ -27,7 +27,7 @@ public class MergeStringsAlternately {
         return result.toString();
     }
     public static void main(String[] args) {
-        String a = "a b c"; //tạo ra các khoảng trắng để mô phỏng nội dung bài toán
+        String a = "a b c"; //tạo ra các khoảng trắng để mô tả sự hợp nhất, sau đó bỏ khoảng trắng
         String b = " d e f";
         System.out.println("Output: " + mergeAlternately(a, b).replaceAll("\\s+", ""));
     }
