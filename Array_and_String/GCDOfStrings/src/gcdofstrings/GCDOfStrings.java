@@ -9,6 +9,27 @@ package gcdofstrings;
  * @author Minh Triet
  */
 public class GCDOfStrings {
+    
+    /*
+  Giả sử chuỗi x là chuỗi con lớn nhất chia hết cả str1 và str2, ta sẽ có:
+
+str1 = x + x + ... (n lần)
+
+str2 = x + x + ... (m lần)
+
+Vậy thì chắc chắn:
+ x sẽ là ước số chung theo chuỗi của cả str1 và str2.
+
+ 1. Quy tắc cần nhớ
+Nếu str1 + str2 khác str2 + str1, thì không thể tồn tại chuỗi x chia hết cả hai. → Trả về "".
+
+Nếu giống nhau, thì chuỗi x có thể được tính là:
+x = str1.substring(0, gcd(len1, len2))
+
+2. Tại sao dùng gcd?
+Vì độ dài của x phải chia hết cả độ dài của str1 và str2. Vậy độ dài tối đa của x là gcd(str1.length(), str2.length()).
+    */
+    
     //Hàm tính GCD giữa hai số nguyên
     private static int gcd(int a, int b){
         return b == 0 ? a : gcd(b, a%b);
@@ -27,8 +48,9 @@ public class GCDOfStrings {
     }
     public static void main(String[] args) {
         System.out.println(gcdOfStrings("ABCABC", "ABC"));  // Output "ABC"
-        System.out.println(gcdOfStrings("ABEF", "ABEF"));  // Output "ABC"
+        System.out.println(gcdOfStrings("ABEF", "ABEF"));  // Output "ABEF"
         System.out.println(gcdOfStrings("ABCABC", "ABCA")); // Output ""
+        System.out.println(gcdOfStrings("ABCABC", "")); // Output "ABCABC"
     }
     
 }
