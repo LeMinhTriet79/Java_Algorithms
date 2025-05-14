@@ -26,8 +26,9 @@ public class GCDOfStrings {
         return str1.substring(0, gcd_Length);
     }
     public static void main(String[] args) {
-        System.out.println(gcdOfStrings("ABCABC", "ABC"));
-        System.out.println(gcdOfStrings("ABCABC", "ABCA"));
+        System.out.println(gcdOfStrings("ABCABC", "ABC"));  // Output "ABC"
+        System.out.println(gcdOfStrings("ABEF", "ABEF"));  // Output "ABC"
+        System.out.println(gcdOfStrings("ABCABC", "ABCA")); // Output ""
     }
     
 }
