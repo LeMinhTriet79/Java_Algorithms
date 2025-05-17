@@ -3,6 +3,25 @@ package pkg605_canplaceflowers;
 /**
  *
  * @author Minh Triet
+ * 
+ * Bài này sử dụng phép toán AND và OR
+ * 
+ * *** Phép toán AND
+ * 
+ * A	B	A AND B
+   0	0	0
+   0	1	0
+   1	0	0
+   1	1	1
+ * 
+ * *** Phép toán OR
+ * 
+ * A	B	A OR B
+   0	0	0
+   0	1	1
+   1	0	1
+   1	1	1
+ * 
  */
 public class Main {
     public static boolean canPlaceFlowers(int[] flowerbed, int n) {
