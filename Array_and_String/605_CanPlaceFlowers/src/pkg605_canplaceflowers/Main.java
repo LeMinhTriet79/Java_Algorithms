@@ -34,7 +34,18 @@ public class Main {
     }
     public static void main(String[] args) {
         int [] a = {1, 2, 3, 4, 5};
-        System.out.println(a.length);
+        System.out.println(a.length - 1); // Tìm vị trí cuối của mảng
+        
+          
+        // Ví dụ 1
+        int[] flowerbed1 = {1, 0, 0, 0, 1};
+        int n1 = 1;
+        System.out.println(canPlaceFlowers(flowerbed1, n1)); // Output: true
+        
+        // Ví dụ 2
+        int[] flowerbed2 = {1, 0, 0, 0, 1};
+        int n2 = 2;
+        System.out.println(canPlaceFlowers(flowerbed2, n2)); // Output: false
     }
     
 }
