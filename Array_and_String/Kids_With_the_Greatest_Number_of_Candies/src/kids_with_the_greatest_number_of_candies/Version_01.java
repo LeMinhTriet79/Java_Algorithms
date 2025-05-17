@@ -38,6 +38,9 @@ public class Version_01 {
         int extraCandies1 = 3;
         boolean[] result1 = kidWithCandies(candies1, extraCandies1);
         System.out.println("Ví dụ 1: " + Arrays.toString(result1));
+        //Ví dụ 1: [true, true, true, false, true]
+        
+        
     }
     
 }
