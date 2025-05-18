@@ -52,8 +52,8 @@ public class Main {
         return count >= n;
     }
     public static void main(String[] args) {
-        int [] a = {1, 2, 3, 4, 5};
-        System.out.println(a.length - 1); // Tìm vị trí cuối của mảng
+//        int [] a = {1, 2, 3, 4, 5};
+//        System.out.println(a.length - 1); // Tìm vị trí cuối của mảng
         
           
         // Ví dụ 1
@@ -65,6 +65,15 @@ public class Main {
         int[] flowerbed2 = {1, 0, 0, 0, 1};
         int n2 = 2;
         System.out.println(canPlaceFlowers(flowerbed2, n2)); // Output: false
+        
+        // Ví dụ 3
+        int[] flowerbed3 = {1, 0, 0, 0, 1, 0, 0};
+        int n3 = 2;
+        System.out.println(canPlaceFlowers(flowerbed2, n3)); 
+// Output: false - vì lúc này mảng flowerbed2 đã thay đổi sau khi chạy dòng lịnh trên
+//Nếu...bỏ chạy dòng  System.out.println(canPlaceFlowers(flowerbed2, n2)); // Output: false thì kết quả sẽ là true
+//
+    System.out.println(canPlaceFlowers(flowerbed3, n3)); 
     }
     
 }
