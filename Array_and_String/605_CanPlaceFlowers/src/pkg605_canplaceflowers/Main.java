@@ -1,6 +1,6 @@
 package pkg605_canplaceflowers;
 
-/**
+/*
  *
  * @author Minh Triet
  * 
