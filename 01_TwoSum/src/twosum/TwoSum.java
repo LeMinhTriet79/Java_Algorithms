@@ -1,5 +1,6 @@
 package twosum;
 
+ 
 import java.util.Scanner;
 
 /**
@@ -23,7 +24,7 @@ public class TwoSum {
             }
 
             duyetMang(a, target);
-        }
+       }
 
     }
 

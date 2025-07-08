@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+C:\Users\Minh Triet\Desktop\GiaoTrinhTuHoc\Java_Algorithms\Array_and_String\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
